@@ -2,7 +2,7 @@ name: Build kpmmgr
 
 on:
   push:
-    branches: [ "mian" ]
+    branches: [ "master" ]
     paths:
       - '.github/workflows/kpmmgr.yml'
       - 'userspace/kpmmgr/**'

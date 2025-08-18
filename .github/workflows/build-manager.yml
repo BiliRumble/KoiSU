@@ -2,7 +2,7 @@ name: Build Manager
 
 on:
   push:
-    branches: [ "main", "ci" ]
+    branches: [ "master", "ci" ]
     paths:
       - '.github/workflows/build-manager.yml'
       - 'manager/**'
@@ -11,7 +11,7 @@ on:
       - 'userspace/susfs/**'
       - 'userspace/kpmmgr/**'
   pull_request:
-    branches: [ "main" ]
+    branches: [ "master" ]
     paths:
       - 'manager/**'
   workflow_call:

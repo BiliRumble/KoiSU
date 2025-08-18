@@ -3,13 +3,13 @@ name: Rustfmt check
 on:
   push:
     branches:
-      - 'main'
+      - 'master'
     paths:
       - '.github/workflows/rustfmt.yml'
       - 'userspace/ksud/**'
   pull_request:
     branches:
-      - 'main'
+      - 'master'
     paths:
       - '.github/workflows/rustfmt.yml'
       - 'userspace/ksud/**'

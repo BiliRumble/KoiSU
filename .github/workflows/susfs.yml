@@ -2,7 +2,7 @@ name: Build susfs
 
 on:
   push:
-    branches: [ "mian" ]
+    branches: [ "master" ]
     paths:
       - '.github/workflows/susfs.yml'
       - 'userspace/susfs/**'
