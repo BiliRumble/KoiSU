@@ -35,7 +35,7 @@ android {
             keyPassword = ""
         }
     }**/
-    namespace = "com.sukisu.ultra"
+    namespace = "com.koisu.manager"
 
     buildTypes {
         release {
@@ -82,7 +82,7 @@ android {
     applicationVariants.all {
         outputs.forEach {
             val output = it as BaseVariantOutputImpl
-            output.outputFileName = "SukiSU_${managerVersionName}_${managerVersionCode}-$name.apk"
+            output.outputFileName = "KoiSU_${managerVersionName}_${managerVersionCode}-$name.apk"
         }
         kotlin.sourceSets {
             getByName(name) {
