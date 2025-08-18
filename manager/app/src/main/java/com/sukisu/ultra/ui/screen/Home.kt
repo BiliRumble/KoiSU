@@ -715,11 +715,13 @@ private fun InfoCard(
                 )
             }
 
-            InfoCardItem(
-                stringResource(R.string.home_device_model),
-                systemInfo.deviceModel,
-                icon = Icons.Default.PhoneAndroid,
-            )
+            if (!viewModel.isSimpleMode) {
+                InfoCardItem(
+                    stringResource(R.string.home_device_model),
+                    systemInfo.deviceModel,
+                    icon = Icons.Default.PhoneAndroid,
+                )
+            }
 
             InfoCardItem(
                 stringResource(R.string.home_manager_version),
