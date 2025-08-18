@@ -715,7 +715,7 @@ private fun InfoCard(
                 )
             }
 
-            if (!viewModel.isSimpleMode) {
+            if (!isSimpleMode) {
                 InfoCardItem(
                     stringResource(R.string.home_device_model),
                     systemInfo.deviceModel,
